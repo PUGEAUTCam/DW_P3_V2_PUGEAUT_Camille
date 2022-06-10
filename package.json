@@ -1,12 +1,22 @@
 {
-  "name": "milie",
+  "name": "dw_p3_v2_pugeaut_camille",
   "version": "1.0.0",
-  "description": "Mon projet OCP Oh my food",
+  "description": "Projet 3 OH MY FOOD ",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test":"sass --watch ./sass/"
   },
-  "author": "Milie",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PUGEAUTCam/DW_P3_V2_PUGEAUT_Camille.git"
+  },
+  "author": "Camille PUGEAUT",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PUGEAUTCam/DW_P3_V2_PUGEAUT_Camille/issues"
+  },
+  "homepage": "https://github.com/PUGEAUTCam/DW_P3_V2_PUGEAUT_Camille#readme",
+  "devDependencies": {
+    "sass": "^1.52.3"
+  }
 }
