@@ -1,12 +1,25 @@
 /*Header*/
 
 header{
+         padding: 20px 0px;
+         
          & img{
                   display: block;
                   margin-left: auto;
                   margin-right: auto;
                   width: 218px;    
-                  padding: 20px 0px;   
+
+                  @include mobile-only{
+                           width: 185px;
+                  }
+         }
+
+         & i{
+                  font-size: 26px;
+                  padding-left:   22px;
+                  @include mobile-only{
+                           margin-right: -41px;
+                  }
          }
 }
 

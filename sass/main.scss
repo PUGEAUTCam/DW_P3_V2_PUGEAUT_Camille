@@ -11,14 +11,19 @@
 
 // Components 
 @import "./components/buttons";
+@import "./components/new";
 
 
 // layouts
+@import "./layout/header-restaurant";
 @import "./layout/header";
 @import "./layout/footer";
+
+
 
 // pages
 @import "./pages/select-city";
 @import "./pages/container-explorer";
 @import"./pages/container-functioning";
 @import"./pages/container-restaurants";
+

@@ -1,0 +1,18 @@
+.new{
+         width: 90px;
+         background-color: $color-tertiary;;
+         align-items: center;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         height: 31px;
+         border-radius: 3px;
+         position: absolute;
+         top: 10px;
+         right: 16px;
+
+         & p{
+                  color: #1a933e;
+                  font-weight: bold;
+         }
+}
