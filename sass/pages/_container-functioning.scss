@@ -1,0 +1,60 @@
+.container-functioning{
+
+         & h2{
+                  padding-left: 22px;
+                  margin-top: 15px;
+         }
+
+         &__steps{
+                  @include flex;
+                  flex-wrap: wrap;
+                  justify-content: space-around;
+
+                  @include mobile-only{
+                           flex-direction: column;
+                           align-items: center;
+                  }
+         }     
+         
+         &__step{
+                  @include flex;
+                  @include border-shadow;
+                  align-items: center;
+                  background-color: $gray-light;
+                  width: 355px;
+                  height: 76px;
+                  border-radius: 20px;
+                  transition: transform 200ms;
+                  margin-top: 29px;
+                  cursor: pointer;
+
+                  & i{
+                           color: gray;
+                           margin-left: 24px;
+                           font-size: 20px;
+                  }
+
+                  &__number{
+                           background-color: #9356DC;
+                           color: white;
+                           text-align: center;
+                           width: 26px;
+                           height: 26px;
+                           border-radius: 13px;
+                           margin-left: -12px;
+                           padding-top: 5px;
+                  }
+
+                  &__text{
+                           font-size: 17px;
+                           font-weight: 600;
+                           padding-left: 26px;
+                  }
+                  &:hover{
+                           transform: scale(1.02);
+                           opacity: 0.9;
+                  }
+         }
+}
+
+

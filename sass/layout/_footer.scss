@@ -1,0 +1,43 @@
+.footer{
+
+         background-color:  $gray-logo;
+         color: white;
+         font-size: 17px;
+         margin-top: 84px;
+
+         @include tablette-only{
+                  margin-top: 0px;
+         }
+         
+         & h1{
+                  padding: 22px;
+                  font-size: 24px;
+                  margin: 0px;
+         }
+ 
+         &__list{
+                  @include flex;
+                  justify-content: space-around;
+                  padding-bottom: 54px;
+                  cursor: pointer;
+
+                  @include mobile-only{
+                          flex-direction: column;
+                          padding-left: 22px;
+                  }
+         }
+
+         & ul{
+                  list-style-type: none;
+                
+         }
+
+         & li{
+                  padding-bottom: 8px;
+         }
+
+         & i{
+                  margin-right: 11px;
+         }
+
+}

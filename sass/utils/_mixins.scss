@@ -1,0 +1,45 @@
+// Generales
+
+@mixin flex{
+         display: flex;
+}
+
+// Responsive
+@mixin mobile-only{
+         @media screen and (max-width: map-get($breackpoints, mobile)){
+                  @content;
+         }
+}
+
+@mixin tablette-only{
+         @media screen and (max-width: map-get($breackpoints, tablette)){
+                  @content;
+         }
+}
+
+@mixin border-shadow{
+         box-shadow: 2px 1px 18px -7px  #969494;;
+}
+
+@mixin btn{
+         @include border-shadow;
+         border-radius: 36px;
+         width: 219px;
+         height: 51px;
+         background: linear-gradient(-7deg, $color-primary, $color-secondary);
+         color: white;
+         font-weight: 500;
+         border: none;
+         cursor: pointer;
+         transition: transform 200ms;
+
+         &:hover{
+                  transform: scale(1.02);
+                  opacity: 0.9;
+         }
+}
+
+
+
+
+

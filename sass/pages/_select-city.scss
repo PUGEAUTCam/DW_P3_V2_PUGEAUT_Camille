@@ -1,0 +1,30 @@
+.select-city {
+         @include flex;
+         justify-content: center;
+         align-items: center;
+         background-color: $gray-light;
+         box-shadow: inset 0px 3px 27px 5px #dcdcdc;
+         padding: 16px 0px;
+         border-radius: 20px 20px 0px 0px;
+
+         @include tablette-only{
+                  border-radius: 0px;
+         }
+
+         & i {
+                  font-size: 18px;
+                  color: rgb(72 62 62);
+                  margin-left: 83px;
+         }        
+
+         & p {
+                  color: $gray-logo;
+                  font-weight: bold;
+                  font-size: 16px;
+         }
+
+         & input {
+                  all: unset;
+                  padding-left: 20px;
+         }         
+}

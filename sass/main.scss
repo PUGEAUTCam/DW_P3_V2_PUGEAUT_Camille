@@ -1,3 +1,24 @@
-h1{
-         background-color:  red;
-}
+// Utils
+
+@import  "./utils/variables";
+@import  "./utils/functions";
+@import  "./utils/mixins";
+
+// Base
+
+@import  "./base/base";
+@import  "./base/typography";
+
+// Components 
+@import "./components/buttons";
+
+
+// layouts
+@import "./layout/header";
+@import "./layout/footer";
+
+// pages
+@import "./pages/select-city";
+@import "./pages/container-explorer";
+@import"./pages/container-functioning";
+@import"./pages/container-restaurants";
