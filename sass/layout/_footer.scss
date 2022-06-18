@@ -1,5 +1,4 @@
 .footer{
-
          background-color:  $gray-logo;
          color: white;
          font-size: 17px;
@@ -28,8 +27,7 @@
          }
 
          & ul{
-                  list-style-type: none;
-                
+                  list-style-type: none;  
          }
 
          & li{
@@ -39,5 +37,4 @@
          & i{
                   margin-right: 11px;
          }
-
 }

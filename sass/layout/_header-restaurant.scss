@@ -1,4 +1,12 @@
 .header-restaurant{
+         background-color: $gray-light;
+         height: 286px;
+         border-radius: 15px 15px 0px 0px;
+         overflow: hidden;
+
+         @include mobile-only{
+                  border-radius: 0px;
+         }
     
          &__img{
                   height: 252px;
@@ -17,7 +25,7 @@
                   position: relative;
                   top: -49px;
 
-                  @include tablette-only{
+                  @include mobile-only{
                            justify-content: space-evenly;
                   }
 
@@ -26,26 +34,14 @@
                   }
 
                   & h1{
-                           font-size: 28px;
+                           font-size: 33px;
                            padding-right: 66px;
 
-                           @include tablette-only{
+                           @include mobile-only{
                                     padding: 0px;
+                                    font-size: 28px;
                            }
-
-                           @include mobile-only{
-                                    font-size: 25px;
-                           }
-                  }
-
-                  & i{
-                           font-size: 27px;
-
-                           @include mobile-only{
-                                   font-size: 26px;
-                                    margin-right: 10px;
-                           }
-                  }                          
+                  }       
          }
  }
 
