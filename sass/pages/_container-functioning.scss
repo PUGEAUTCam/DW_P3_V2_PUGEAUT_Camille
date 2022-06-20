@@ -21,7 +21,7 @@
                   @include border-shadow;
                   align-items: center;
                   background-color: $gray-light;
-                  width: 355px;
+                  width: 349px;
                   height: 76px;
                   border-radius: 20px;
                   transition: transform 200ms;
@@ -47,12 +47,13 @@
 
                   &__text{
                            font-size: 17px;
-                           font-weight: 600;
+                           font-weight: bold;
                            padding-left: 26px;
                   }
                   &:hover{
                            transform: scale(1.02);
                            opacity: 0.9;
+                         
                   }
          }
 }

@@ -248,9 +248,16 @@ header i {
 .menu__card__price {
   justify-content: space-between;
   align-items: center;
-  padding: 8px 11px;
+  padding-left: 11px;
+  padding-right: 11px;
+  padding-bottom: 10px;
+  padding-top: 3px;
+}
+.menu__card__price p {
+  font-weight: 300;
 }
 .menu__card__price strong {
+  font-weight: bold;
   padding-right: 10px;
 }
 .menu__card:hover {
@@ -278,9 +285,14 @@ header i {
   margin-left: 83px;
   padding-bottom: 1px;
 }
+@media screen and (max-width: 768px) {
+  .select-city i {
+    margin-left: 78px;
+  }
+}
 .select-city p {
-  color: #9b9999;
-  font-weight: bold;
+  color: rgb(72, 62, 62);
+  font-weight: 400;
   font-size: 19px;
 }
 @media screen and (max-width: 768px) {
@@ -329,7 +341,7 @@ header i {
   box-shadow: 2px 1px 18px -7px #969494;
   align-items: center;
   background-color: #F2F2F2;
-  width: 355px;
+  width: 349px;
   height: 76px;
   border-radius: 20px;
   transition: transform 200ms;
@@ -353,7 +365,7 @@ header i {
 }
 .container-functioning__step__text {
   font-size: 17px;
-  font-weight: 600;
+  font-weight: bold;
   padding-left: 26px;
 }
 .container-functioning__step:hover {
@@ -429,12 +441,14 @@ header i {
   align-items: center;
 }
 .container-cards .card__body h3 {
-  padding-left: 14px;
+  padding-left: 15px;
   padding-bottom: 3px;
+  font-weight: 500;
 }
 .container-cards .card__body p {
-  padding-left: 14px;
-  padding-bottom: 8px;
+  padding-left: 15px;
+  padding-bottom: 11px;
+  font-weight: 300;
 }
 .container-cards .card__body__logo {
   font-size: 28px;

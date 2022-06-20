@@ -16,11 +16,15 @@
                   color: rgb(72 62 62);
                   margin-left: 83px;
                   padding-bottom: 1px;
+
+                  @include mobile-only{
+                           margin-left: 78px;
+                  }
          }        
 
          & p {
-                  color: #9b9999;
-                  font-weight: bold;
+                  color: rgb(72 62 62);
+                  font-weight: 400;
                   font-size: 19px;
 
                   @include mobile-only{
