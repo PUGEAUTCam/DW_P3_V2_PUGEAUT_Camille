@@ -52,7 +52,7 @@ h1 {
 }
 
 .btn__commader {
-  background-color: #FBFBFB;
+  background-color: #f6f6f6;
   text-align: center;
   border-radius: 0px 0px 15px 15px;
   padding-bottom: 50px;
@@ -84,7 +84,7 @@ h1 {
 }
 
 .header-restaurant {
-  background-color: #FBFBFB;
+  background-color: #f6f6f6;
   border-radius: 15px 15px 0px 0px;
   overflow: hidden;
 }
@@ -107,7 +107,7 @@ h1 {
 .header-restaurant__title {
   align-items: center;
   justify-content: center;
-  background-color: #FBFBFB;
+  background-color: #f6f6f6;
   position: relative;
   top: -49px;
   padding-top: 29px;
@@ -161,7 +161,7 @@ header i {
   font-size: 17px;
   margin-top: 120px;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1624px) {
   .footer {
     margin-top: 0px;
   }
@@ -194,7 +194,7 @@ header i {
 }
 
 .container-menu {
-  background-color: #FBFBFB;
+  background-color: #f6f6f6;
   justify-content: space-around;
   flex-wrap: wrap;
   padding: 28px 0px 37px 0px;
@@ -268,7 +268,7 @@ header i {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #FBFBFB;
+  background-color: #f6f6f6;
   box-shadow: inset 0px 3px 27px 5px #dcdcdc;
   padding: 16px 0px;
   border-radius: 20px 20px 0px 0px;
@@ -305,7 +305,7 @@ header i {
 }
 
 .container-explore {
-  background-color: #FBFBFB;
+  background-color: #f6f6f6;
   text-align: center;
   border-radius: 0px 0px 20px 20px;
 }
@@ -339,7 +339,7 @@ header i {
   display: flex;
   box-shadow: 2px 1px 18px -7px #969494;
   align-items: center;
-  background-color: #FBFBFB;
+  background-color: #f6f6f6;
   width: 349px;
   height: 76px;
   border-radius: 20px;
@@ -373,7 +373,7 @@ header i {
 }
 
 .container-restaurants {
-  background-color: #FBFBFB;
+  background-color: #f6f6f6;
   border-radius: 20px;
 }
 @media screen and (max-width: 768px) {

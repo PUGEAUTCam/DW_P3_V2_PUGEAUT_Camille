@@ -8,12 +8,13 @@ $color-tertiary: #99E2D0;
 
 // Couleurs texte et ombre 
 
-$gray-light: #FBFBFB;
-$gray-logo: rgb(74 69 69);;
+$gray-light: #f6f6f6;
+$gray-logo: rgb(74 69 69);
 
 // Breakpoints
 
 $breackpoints: (
          mobile: 768px, 
          tablette: 992px, 
+         ecran-max: 1624px,
 )

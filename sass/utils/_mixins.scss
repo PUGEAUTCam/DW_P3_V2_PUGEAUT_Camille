@@ -17,6 +17,13 @@
          }
 }
 
+@mixin ecran-max{
+         @media screen and (max-width: map-get($breackpoints, ecran-max)){
+                  @content;
+         }
+}
+
+
 @mixin border-shadow{
          box-shadow: 2px 1px 18px -7px  #969494;
 }
