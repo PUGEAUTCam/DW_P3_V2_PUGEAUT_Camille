@@ -2,10 +2,12 @@
          background-color: $gray-light;
          justify-content: space-around;
          flex-wrap: wrap;
-         padding-top: 65px;
+         padding: 28px 0px 37px 0px;
+         // padding-top: 65px;
 
          @include mobile-only{
-                  padding-top: 0px;
+                  padding-top: 13px;
+                  padding-bottom: 0px;
          }
 }
 

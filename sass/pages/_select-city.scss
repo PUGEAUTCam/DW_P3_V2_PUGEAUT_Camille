@@ -15,12 +15,17 @@
                   font-size: 18px;
                   color: rgb(72 62 62);
                   margin-left: 83px;
+                  padding-bottom: 1px;
          }        
 
          & p {
-                  color: $gray-logo;
+                  color: #9b9999;
                   font-weight: bold;
                   font-size: 19px;
+
+                  @include mobile-only{
+                           font-size: 17px;
+                  }
          }
 
          & input {

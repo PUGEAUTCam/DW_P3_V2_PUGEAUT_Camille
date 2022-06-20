@@ -10,10 +10,10 @@
          background-color: $gray-light;
          text-align: center;
          border-radius: 0px 0px 15px 15px;
-         padding-bottom: 34px;
-         padding-top: 26px;
-         @include mobile-only{
-                  border-radius: 0px;
-                 
+         padding-bottom: 50px;
+         padding-top: 50px;
+         @include tablette-only{
+                  padding-bottom: 34px;
+                  padding-top: 26px;
          }
 }

@@ -9,9 +9,9 @@ header{
                   margin-right: auto;
                   width: 218px;    
 
-                  @include mobile-only{
-                           width: 185px;
-                  }
+                  // @include mobile-only{
+                  //          width: 185px;
+                  // }
          }
 
          & i{
