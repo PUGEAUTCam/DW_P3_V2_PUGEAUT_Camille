@@ -25,11 +25,10 @@
          @include border-shadow;
          border-radius: 36px;
          width: 236px;
-         // 219px;
          height: 51px;
          background: linear-gradient(-7deg, $color-primary, $color-secondary);
          color: white;
-         font-weight: bold;
+         font-weight: 700;
          border: none;
          cursor: pointer;
          transition: transform 200ms;

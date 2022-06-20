@@ -38,7 +38,7 @@ h1 {
   height: 51px;
   background: linear-gradient(-7deg, #9356DC, #FF79DA);
   color: white;
-  font-weight: bold;
+  font-weight: 700;
   border: none;
   cursor: pointer;
   transition: transform 200ms;
@@ -52,7 +52,7 @@ h1 {
 }
 
 .btn__commader {
-  background-color: #F2F2F2;
+  background-color: #FBFBFB;
   text-align: center;
   border-radius: 0px 0px 15px 15px;
   padding-bottom: 50px;
@@ -84,7 +84,7 @@ h1 {
 }
 
 .header-restaurant {
-  background-color: #F2F2F2;
+  background-color: #FBFBFB;
   border-radius: 15px 15px 0px 0px;
   overflow: hidden;
 }
@@ -107,7 +107,7 @@ h1 {
 .header-restaurant__title {
   align-items: center;
   justify-content: center;
-  background-color: #F2F2F2;
+  background-color: #FBFBFB;
   position: relative;
   top: -49px;
   padding-top: 29px;
@@ -130,8 +130,8 @@ h1 {
 @media screen and (max-width: 768px) {
   .header-restaurant__title h1 {
     padding: 0px;
-    font-size: 27px;
-    letter-spacing: 0.5px;
+    font-size: 28px;
+    margin-left: -26px;
   }
 }
 
@@ -194,15 +194,14 @@ header i {
 }
 
 .container-menu {
-  background-color: #F2F2F2;
+  background-color: #FBFBFB;
   justify-content: space-around;
   flex-wrap: wrap;
   padding: 28px 0px 37px 0px;
 }
 @media screen and (max-width: 768px) {
   .container-menu {
-    padding-top: 13px;
-    padding-bottom: 0px;
+    padding: 0px;
   }
 }
 
@@ -213,8 +212,8 @@ header i {
 }
 @media screen and (max-width: 992px) {
   .menu__title {
-    margin-top: 18px;
-    padding-bottom: 14px;
+    margin-top: 38px;
+    padding-bottom: 16px;
   }
 }
 .menu span {
@@ -238,7 +237,7 @@ header i {
 }
 @media screen and (max-width: 768px) {
   .menu__card {
-    margin: 10px 0px;
+    margin: 8px 0px;
   }
 }
 .menu__card h3 {
@@ -269,7 +268,7 @@ header i {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #F2F2F2;
+  background-color: #FBFBFB;
   box-shadow: inset 0px 3px 27px 5px #dcdcdc;
   padding: 16px 0px;
   border-radius: 20px 20px 0px 0px;
@@ -282,7 +281,7 @@ header i {
 .select-city i {
   font-size: 18px;
   color: rgb(72, 62, 62);
-  margin-left: 83px;
+  margin-left: 100px;
   padding-bottom: 1px;
 }
 @media screen and (max-width: 768px) {
@@ -306,7 +305,7 @@ header i {
 }
 
 .container-explore {
-  background-color: #F2F2F2;
+  background-color: #FBFBFB;
   text-align: center;
   border-radius: 0px 0px 20px 20px;
 }
@@ -340,7 +339,7 @@ header i {
   display: flex;
   box-shadow: 2px 1px 18px -7px #969494;
   align-items: center;
-  background-color: #F2F2F2;
+  background-color: #FBFBFB;
   width: 349px;
   height: 76px;
   border-radius: 20px;
@@ -374,7 +373,7 @@ header i {
 }
 
 .container-restaurants {
-  background-color: #F2F2F2;
+  background-color: #FBFBFB;
   border-radius: 20px;
 }
 @media screen and (max-width: 768px) {

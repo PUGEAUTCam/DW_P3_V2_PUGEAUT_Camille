@@ -6,8 +6,7 @@
          // padding-top: 65px;
 
          @include mobile-only{
-                  padding-top: 13px;
-                  padding-bottom: 0px;
+                  padding: 0px;
          }
 }
 
@@ -18,8 +17,8 @@
                   padding-bottom: 23px;
 
                   @include tablette-only{
-                           margin-top: 18px;
-                           padding-bottom: 14px;
+                           margin-top: 38px;
+                           padding-bottom: 16px;
                   }
          }
 
@@ -46,7 +45,7 @@
 
 
          @include mobile-only{
-                  margin: 10px 0px;
+                  margin: 8px 0px;
          }
 
          & h3 {
