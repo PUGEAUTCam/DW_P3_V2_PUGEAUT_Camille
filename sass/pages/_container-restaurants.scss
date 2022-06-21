@@ -65,6 +65,7 @@
                            @include flex;
                            justify-content: space-between;
                            align-items: center;
+                           height: 67px;
 
                            & h3{
                                     padding-left: 15px;
@@ -79,8 +80,8 @@
                            }
 
                            &__logo{
-                                    font-size: 28px;
-                                    padding: 19px;
+                                    width: 27px;
+                                    margin-right: 24px;;      
                            }
                   }
          }

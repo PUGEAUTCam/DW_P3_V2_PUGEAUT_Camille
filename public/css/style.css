@@ -134,6 +134,9 @@ h1 {
     margin-left: -26px;
   }
 }
+.header-restaurant__title img {
+  width: 27px;
+}
 
 /*Header*/
 header {
@@ -438,6 +441,7 @@ header i {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 67px;
 }
 .container-cards .card__body h3 {
   padding-left: 15px;
@@ -450,8 +454,8 @@ header i {
   font-weight: 300;
 }
 .container-cards .card__body__logo {
-  font-size: 28px;
-  padding: 19px;
+  width: 27px;
+  margin-right: 24px;
 }
 
 /*# sourceMappingURL=style.css.map */
