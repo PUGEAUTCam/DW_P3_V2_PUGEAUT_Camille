@@ -1,61 +1,88 @@
 .container-functioning{
-
          & h2{
                   padding-left: 22px;
                   margin-top: 15px;
          }
-
-         &__steps{
-                  @include flex;
-                  flex-wrap: wrap;
-                  justify-content: space-around;
-
-                  @include mobile-only{
-                           flex-direction: column;
-                           align-items: center;
-                  }
-         }     
-         
-         &__step{
-                  @include flex;
-                  @include border-shadow;
-                  align-items: center;
-                  background-color: $gray-light;
-                  width: 349px;
-                  height: 76px;
-                  border-radius: 20px;
-                  transition: transform 200ms;
-                  margin-top: 29px;
-                  cursor: pointer;
-
-                  & i{
-                           color: gray;
-                           margin-left: 24px;
-                           font-size: 20px;
-                  }
-
-                  &__number{
-                           background-color: #9356DC;
-                           color: white;
-                           text-align: center;
-                           width: 26px;
-                           height: 26px;
-                           border-radius: 13px;
-                           margin-left: -12px;
-                           padding-top: 5px;
-                  }
-
-                  &__text{
-                           font-size: 17px;
-                           font-weight: bold;
-                           padding-left: 26px;
-                  }
-                  &:hover{
-                           transform: scale(1.02);
-                           opacity: 0.9;
-                         
-                  }
-         }
 }
 
+
+.container__steps{
+         @include flex;
+         flex-wrap: wrap;
+         justify-content: space-around;
+
+         @include mobile-only{
+                  flex-direction: column;
+                  align-items: center;
+         }
+}    
+
+
+.step{
+         @include flex;
+         @include border-shadow;
+         align-items: center;
+         background-color: $gray-light;
+         width: 349px;
+         height: 76px;
+         border-radius: 25px;
+         margin-top: 29px;
+         cursor: pointer;
+
+         transition: transform 50ms;
+         z-index: 1;
+         position: relative;
+
+         &__number{
+                  background-color: $color-primary;
+                  color: white;
+                  text-align: center;
+                  width: 26px;
+                  height: 26px;
+                  border-radius: 13px;
+                  margin-left: -12px;
+                  padding-top: 5px;
+         }
+         
+         &__logo{
+                  color: gray;
+                  margin-left: 24px;
+                  font-size: 20px;
+         }
+
+         &__text{
+                  font-size: 17px;
+                  font-weight: bold;
+                  padding-left: 26px;
+         }        
+
+         &::after{
+                  content: " ";
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%,-50%);
+                  border-radius: 25px;
+                  background-color: #e4d5f6;
+                  opacity: 0;
+                  z-index: -1;
+                  width: 0%;
+                  height: 100%;
+                  transition: all 600ms ease;
+         }
+
+
+         &:hover{
+                  transform: scale(1.01);
+
+                  & .step__logo{
+                           color: $color-primary;
+                  }
+                  
+                  &::after{
+                           opacity: 1;
+                           width: 100%;
+                  }                 
+         }         
+}
 

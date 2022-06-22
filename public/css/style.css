@@ -327,35 +327,34 @@ header i {
   padding-left: 22px;
   margin-top: 15px;
 }
-.container-functioning__steps {
+
+.container__steps {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 @media screen and (max-width: 768px) {
-  .container-functioning__steps {
+  .container__steps {
     flex-direction: column;
     align-items: center;
   }
 }
-.container-functioning__step {
+
+.step {
   display: flex;
   box-shadow: 2px 1px 18px -7px #969494;
   align-items: center;
   background-color: #f6f6f6;
   width: 349px;
   height: 76px;
-  border-radius: 20px;
-  transition: transform 200ms;
+  border-radius: 25px;
   margin-top: 29px;
   cursor: pointer;
+  transition: transform 50ms;
+  z-index: 1;
+  position: relative;
 }
-.container-functioning__step i {
-  color: gray;
-  margin-left: 24px;
-  font-size: 20px;
-}
-.container-functioning__step__number {
+.step__number {
   background-color: #9356DC;
   color: white;
   text-align: center;
@@ -365,14 +364,39 @@ header i {
   margin-left: -12px;
   padding-top: 5px;
 }
-.container-functioning__step__text {
+.step__logo {
+  color: gray;
+  margin-left: 24px;
+  font-size: 20px;
+}
+.step__text {
   font-size: 17px;
   font-weight: bold;
   padding-left: 26px;
 }
-.container-functioning__step:hover {
-  transform: scale(1.02);
-  opacity: 0.9;
+.step::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 25px;
+  background-color: #e4d5f6;
+  opacity: 0;
+  z-index: -1;
+  width: 0%;
+  height: 100%;
+  transition: all 600ms ease;
+}
+.step:hover {
+  transform: scale(1.01);
+}
+.step:hover .step__logo {
+  color: #9356DC;
+}
+.step:hover::after {
+  opacity: 1;
+  width: 100%;
 }
 
 .container-restaurants {
