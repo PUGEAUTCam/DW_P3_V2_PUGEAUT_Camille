@@ -235,7 +235,6 @@ header i {
   border-radius: 15px;
   width: 387px;
   box-shadow: 2px 1px 18px -7px #969494;
-  transition: transform 200ms;
   margin: 20px 0px;
 }
 @media screen and (max-width: 768px) {
@@ -262,9 +261,35 @@ header i {
   font-weight: bold;
   padding-right: 10px;
 }
-.menu__card:hover {
-  transform: scale(1.02);
-  opacity: 0.9;
+
+@keyframes slideup {
+  from {
+    transform: translateY(8px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.animation_1 {
+  animation: slideup 500ms linear both;
+  animation-delay: 0.25s;
+}
+
+.animation_2 {
+  animation: slideup 500ms linear both;
+  animation-delay: 0.5s;
+}
+
+.animation_3 {
+  animation: slideup 500ms linear both;
+  animation-delay: 0.75s;
+}
+
+.animation_4 {
+  animation: slideup 500ms linear both;
+  animation-delay: 1s;
 }
 
 .select-city {
@@ -453,7 +478,7 @@ header i {
   }
 }
 .container-cards .card:hover {
-  transform: scale(1.02);
+  transform: scale(1.01);
   opacity: 0.9;
 }
 .container-cards .card__img {

@@ -40,9 +40,7 @@
          border-radius: 15px;
          width: 387px;
          @include border-shadow;
-         transition: transform 200ms;
          margin: 20px 0px;
-
 
          @include mobile-only{
                   margin: 8px 0px;
@@ -70,14 +68,28 @@
                            padding-right: 10px;
                   }
          }
+}
 
-         &:hover{
-                  transform: scale(1.02);
-                  opacity: 0.9;
+
+@keyframes slideup {
+         from {
+         transform: translateY(8px);
+         opacity: 0
+         }
+
+
+         to {
+         transform: translateY(0px);
+         opacity: 1;
          }
 }
 
 
-
+@for $i  from 1 through 4 {
+         .animation_#{$i} {
+                  animation: slideup 500ms linear both;
+                  animation-delay: #{$i / 4}s;   
+         }
+}
 
 
