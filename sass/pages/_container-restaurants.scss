@@ -54,6 +54,11 @@
                            transform: scale(1.01);
                            opacity: 0.9;
                   }
+                  
+                  &:active{
+                           transform: scale(1.01);
+                           opacity: 0.9;
+                  }
 
                   &__img{
                            width: 100%;
@@ -81,7 +86,8 @@
 
                            &__logo{
                                     width: 27px;
-                                    margin-right: 24px;;      
+                                    margin-right: 24px;
+                                         
                            }
                   }
          }
