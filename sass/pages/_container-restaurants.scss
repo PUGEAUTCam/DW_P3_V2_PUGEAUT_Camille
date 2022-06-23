@@ -41,11 +41,7 @@
                   margin-bottom: 26px;
                   transition: transform 200ms;
                   position: relative;
-
-                  @include mobile-only{
-                           width: 355px;
-                  }
-         
+             
                   @include tablette-only{
                            width: 355px;
                   }
@@ -60,6 +56,8 @@
                            opacity: 0.9;
                   }
 
+
+
                   &__img{
                            width: 100%;
                            height: 186px;
@@ -71,6 +69,7 @@
                            justify-content: space-between;
                            align-items: center;
                            height: 67px;
+                          
 
                            & h3{
                                     padding-left: 15px;
@@ -85,10 +84,51 @@
                            }
 
                            &__logo{
+                                    width: 50px;
+                                    position: relative; 
+                                    opacity: 1;
+                           }
+
+                           &__logo img{
                                     width: 27px;
-                                    margin-right: 24px;
-                                         
+                                    margin-right: 24px;    
+                                    opacity: 1;
+
+                                    &:hover{
+                                             opacity: 0;
+                                    }                                
                            }
                   }
          }
 }
+
+// Pour le second coeur
+
+.coeur_1{
+         font-size: 30px;
+         color: transparent;
+         background: linear-gradient(to left, $color-primary, $color-secondary);
+         background-clip: text;
+         position: absolute;
+         right: 22px;
+         top: -2px;
+         opacity: 0;
+         transition: all 300ms ease;
+
+         @include tablette-only{
+                  transition: all 0ms;
+         }       
+
+         &:hover{
+                  transform: scale(1.01);
+                  opacity: 1;
+         }    
+
+         &:active{
+                  transform: scale(1.01);
+                  opacity: 1;
+         }
+
+}
+
+
