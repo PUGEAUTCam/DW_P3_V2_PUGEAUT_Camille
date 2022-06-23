@@ -3,7 +3,6 @@
          justify-content: space-around;
          flex-wrap: wrap;
          padding: 28px 0px 37px 0px;
-         // padding-top: 65px;
 
          @include mobile-only{
                   padding: 0px;
@@ -29,8 +28,6 @@
          }
 }
 
-
-
 .container__card{
          display: flex;
          flex-direction: column;
@@ -38,65 +35,118 @@
         
 }
 
+
+
 .menu__card{
+         cursor: pointer;
+         justify-content: space-between;
          background-color: white;
          border-radius: 15px;
          width: 387px;
          @include border-shadow;
          margin: 20px 0px;
+         overflow: hidden;
+
 
          @include mobile-only{
                   margin: 8px 0px;
          }
 
+         &:hover .animation_check{
+                 margin-right: 0px;
+                 transition: 700ms;
+         }
+
+         &:active .animation_check{
+                  margin-right: 0px;
+                  transition: 600ms;
+         }
+}
+
+
+
+.menu__card__title{
+         width: 272px;
+
          & h3 {
                   padding-left: 11px;
-                  padding-top: 11px;
+                  padding-top: 13px;
          }
 
-         &__price{
-                  justify-content: space-between;
-                  align-items: center;
+         & p{
+                  font-weight: 300;
                   padding-left: 11px;
-                  padding-right: 11px;
-                  padding-bottom: 10px;
-                  padding-top: 3px;
-
-                  & p{
-                           font-weight: 300;
-
-                  }
-
-                  & strong{
-                           font-weight: bold;
-                           padding-right: 10px;
-                           
-                  }
+                  padding-top: 4px;
+                  padding-bottom: 13px;
          }
 
-        
 }
 
 
-@keyframes slideup {
-         from {
-         transform: translateY(8px);
-         opacity: 0
+.menu__card__price{
+         font-weight: bold;
+         padding-top: 38px;
+         padding-right: 14px;        
+}               
+         
+
+         
+// Pour l'animation valider un menu
+
+.animation_check{
+         background-color: $color-tertiary;
+         width:72px;
+         border-radius: 0px 14px 14px 0px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin-right: -74px;
+                 
+         & i{
+         
+                  color: $color-tertiary;
+                  font-size: 21px;
+                  background-color: white;
+                  width: 30px;
+                  border-radius: 15px;
+                  height: 30px;
+                  text-align: center;
+                  padding-top: 6px;
+             
          }
 
-
-         to {
-         transform: translateY(0px);
-         opacity: 1;
-         }
 }
 
 
-@for $i  from 1 through 4 {
-         .animation_#{$i} {
-                  animation: slideup 500ms linear both;
-                  animation-delay: #{$i / 4}s;   
-         }
-}
+
+
+
+
+
+
+// Pour l'apparation des menus en temps differe
+
+// @keyframes slideup {
+//          from {
+//          transform: translateY(8px);
+//          opacity: 0
+//          }
+
+
+//          to {
+//          transform: translateY(0px);
+//          opacity: 1;
+//          }
+// }
+
+
+// @for $i  from 1 through 4 {
+//          .animation_#{$i} {
+//                   animation: slideup 500ms linear both;
+//                   animation-delay: #{$i / 4}s;   
+//          }
+// }
+
+
 
 
