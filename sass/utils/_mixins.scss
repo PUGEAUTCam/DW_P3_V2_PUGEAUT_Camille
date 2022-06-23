@@ -45,6 +45,12 @@
                   opacity: 0.9;
                   box-shadow: 2px 1px 5px  -1px #545353;
          }
+
+         &:active{
+                  transform: scale(1.02);
+                  opacity: 0.9;
+                  box-shadow: 2px 1px 5px  -1px #545353;
+         }
 }
 
 

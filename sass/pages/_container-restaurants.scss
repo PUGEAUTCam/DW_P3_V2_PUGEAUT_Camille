@@ -51,7 +51,12 @@
                   }
 
                   &:hover{
-                           transform: scale(1.02);
+                           transform: scale(1.01);
+                           opacity: 0.9;
+                  }
+                  
+                  &:active{
+                           transform: scale(1.01);
                            opacity: 0.9;
                   }
 
@@ -81,7 +86,8 @@
 
                            &__logo{
                                     width: 27px;
-                                    margin-right: 24px;;      
+                                    margin-right: 24px;
+                                         
                            }
                   }
          }

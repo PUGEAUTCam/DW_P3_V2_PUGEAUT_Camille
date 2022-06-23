@@ -23,7 +23,7 @@
          @include border-shadow;
          align-items: center;
          background-color: $gray-light;
-         width: 349px;
+         width: 353px;
          height: 76px;
          border-radius: 25px;
          margin-top: 29px;
@@ -83,6 +83,19 @@
                            opacity: 1;
                            width: 100%;
                   }                 
+         }    
+         
+         &:active{
+                  transform: scale(1.01);
+
+                  & .step__logo{
+                           color: $color-primary;
+                  }
+                  
+                  &::after{
+                           opacity: 1;  
+                  }                 
          }         
+
 }
 
