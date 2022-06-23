@@ -48,12 +48,10 @@
 
                   &:hover{
                            transform: scale(1.01);
-                           opacity: 0.9;
                   }
                   
                   &:active{
                            transform: scale(1.01);
-                           opacity: 0.9;
                   }
 
 
@@ -109,6 +107,7 @@
          color: transparent;
          background: linear-gradient(to left, $color-primary, $color-secondary);
          background-clip: text;
+         -webkit-background-clip : text;
          position: absolute;
          right: 22px;
          top: -2px;
