@@ -198,6 +198,12 @@ header i {
     margin-right: -41px;
   }
 }
+header i:hover {
+  color: #99E2D0;
+}
+header i:active {
+  color: #99E2D0;
+}
 
 .footer {
   background-color: rgb(74, 69, 69);
@@ -232,6 +238,12 @@ header i {
 }
 .footer li {
   padding-bottom: 8px;
+}
+.footer li:hover {
+  color: #99E2D0;
+}
+.footer li:active {
+  color: #99E2D0;
 }
 .footer i {
   margin-right: 11px;
@@ -277,7 +289,7 @@ header i {
   background-color: white;
   border-radius: 15px;
   width: 387px;
-  box-shadow: 2px 1px 18px 0px #969494;
+  box-shadow: 2px 1px 18px -7px #969494;
   margin: 20px 0px;
   overflow: hidden;
 }
@@ -321,6 +333,7 @@ header i {
   font-weight: bold;
   padding-top: 38px;
   padding-right: 14px;
+  margin-left: 3px;
 }
 
 .animation_check {
@@ -351,6 +364,36 @@ header i {
     transform: rotate(0);
   }
 }
+@keyframes slideup {
+  from {
+    transform: translateY(8px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.animation_1 {
+  animation: slideup 500ms linear both;
+  animation-delay: 0.25s;
+}
+
+.animation_2 {
+  animation: slideup 500ms linear both;
+  animation-delay: 0.5s;
+}
+
+.animation_3 {
+  animation: slideup 500ms linear both;
+  animation-delay: 0.75s;
+}
+
+.animation_4 {
+  animation: slideup 500ms linear both;
+  animation-delay: 1s;
+}
+
 .select-city {
   display: flex;
   justify-content: center;
@@ -426,7 +469,7 @@ header i {
 
 .step {
   display: flex;
-  box-shadow: 2px 1px 18px 0px #969494;
+  box-shadow: 2px 1px 18px -7px #969494;
   align-items: center;
   background-color: #f6f6f6;
   width: 353px;
@@ -535,7 +578,7 @@ header i {
 }
 .container-cards .card {
   border-radius: 20px;
-  box-shadow: 2px 1px 18px 0px #969494;
+  box-shadow: 2px 1px 18px -7px #969494;
   overflow: hidden;
   width: 39%;
   height: 256px;

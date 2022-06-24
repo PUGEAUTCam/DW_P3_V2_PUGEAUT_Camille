@@ -25,11 +25,11 @@
 
 
 @mixin border-shadow{
-         box-shadow: 2px 1px 18px 0px  #969494;
+         box-shadow: 2px 1px 18px -7px  #969494;
 }
 
 @mixin btn{
-         @include border-shadow;
+         box-shadow: 2px 1px 18px 0px  #969494;
          border-radius: 36px;
          width: 236px;
          height: 51px;
@@ -53,6 +53,7 @@
          }
 }
 
+
 @mixin coeur-animation{
          color: transparent;
          background: linear-gradient(to left, $color-primary, $color-secondary);
@@ -70,7 +71,6 @@
          &:active{
                   opacity: 1;
          }
-
 }
 
 
