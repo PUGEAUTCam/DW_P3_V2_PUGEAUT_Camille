@@ -32,6 +32,14 @@
 
          & li{
                   padding-bottom: 8px;
+
+                  &:hover{
+                           color: $color-tertiary;                           
+                  }
+
+                  &:active{
+                           color: $color-tertiary;                           
+                  }
          }
 
          & i{

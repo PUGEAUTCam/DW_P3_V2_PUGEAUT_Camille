@@ -32,9 +32,7 @@
          display: flex;
          flex-direction: column;
          justify-content: space-evenly;
-        
 }
-
 
 
 .menu__card{
@@ -93,7 +91,8 @@
 .menu__card__price{
          font-weight: bold;
          padding-top: 38px;
-         padding-right: 14px;        
+         padding-right: 14px;     
+         margin-left: 3px;   
 }               
          
       
@@ -117,9 +116,8 @@
                   height: 30px;
                   text-align: center;
                   padding-top: 6px;                  
-             
+     
          }
-
 }
 
 @keyframes check-rotate{
@@ -133,29 +131,27 @@
 }
 
 
-
 // Pour l'apparation des menus en temps differe
 
-// @keyframes slideup {
-//          from {
-//          transform: translateY(8px);
-//          opacity: 0
-//          }
+@keyframes slideup {
+         from {
+         transform: translateY(8px);
+         opacity: 0
+         }
 
 
-//          to {
-//          transform: translateY(0px);
-//          opacity: 1;
-//          }
-// }
+         to {
+         transform: translateY(0px);
+         opacity: 1;
+         }
+}
 
-
-// @for $i  from 1 through 4 {
-//          .animation_#{$i} {
-//                   animation: slideup 500ms linear both;
-//                   animation-delay: #{$i / 4}s;   
-//          }
-// }
+@for $i  from 1 through 4 {
+         .animation_#{$i} {
+                  animation: slideup 500ms linear both;
+                  animation-delay: #{$i / 4}s;   
+         }
+}
 
 
 
