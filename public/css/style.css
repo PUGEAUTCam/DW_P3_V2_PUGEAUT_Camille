@@ -32,7 +32,7 @@ h1 {
 }
 
 .btn {
-  box-shadow: 2px 1px 18px -7px #969494;
+  box-shadow: 2px 1px 18px 0px #969494;
   border-radius: 36px;
   width: 236px;
   height: 51px;
@@ -48,12 +48,12 @@ h1 {
 .btn:hover {
   transform: scale(1.02);
   opacity: 0.9;
-  box-shadow: 2px 1px 5px -1px #545353;
+  box-shadow: 2px 1px 14px 0px #545353;
 }
 .btn:active {
   transform: scale(1.02);
   opacity: 0.9;
-  box-shadow: 2px 1px 5px -1px #545353;
+  box-shadow: 2px 1px 14px 0px #545353;
 }
 
 .btn__commader {
@@ -155,20 +155,28 @@ h1 {
   width: 27px;
 }
 
+.coeur_check {
+  position: relative;
+}
+
 .coeur_2 {
-  font-size: 31px;
   color: transparent;
   background: linear-gradient(to left, #9356DC, #FF79DA);
   background-clip: text;
-  position: absolute;
-  right: 55px;
   -webkit-background-clip: text;
+  position: absolute;
+  opacity: 0;
   transition: all 300ms ease;
+  font-size: 33px;
+  right: -3px;
+  top: -3px;
 }
-@media screen and (max-width: 992px) {
-  .coeur_2 {
-    transition: all 0ms;
-  }
+.coeur_2:hover {
+  transform: scale(1.01);
+  opacity: 1;
+}
+.coeur_2:active {
+  opacity: 1;
 }
 
 /*Header*/
@@ -269,7 +277,7 @@ header i {
   background-color: white;
   border-radius: 15px;
   width: 387px;
-  box-shadow: 2px 1px 18px -7px #969494;
+  box-shadow: 2px 1px 18px 0px #969494;
   margin: 20px 0px;
   overflow: hidden;
 }
@@ -280,25 +288,33 @@ header i {
 }
 .menu__card:hover .animation_check {
   margin-right: 0px;
-  transition: 700ms;
 }
 .menu__card:active .animation_check {
   margin-right: 0px;
-  transition: 600ms;
+}
+.menu__card:hover .animation_check i {
+  animation: check-rotate 0.5s linear;
 }
 
 .menu__card__title {
-  width: 272px;
+  width: 312px;
+  overflow: hidden;
 }
 .menu__card__title h3 {
   padding-left: 11px;
   padding-top: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu__card__title p {
   font-weight: 300;
   padding-left: 11px;
   padding-top: 4px;
   padding-bottom: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .menu__card__price {
@@ -310,11 +326,11 @@ header i {
 .animation_check {
   background-color: #99E2D0;
   width: 72px;
-  border-radius: 0px 14px 14px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-right: -74px;
+  transition: margin-right 0.5s linear;
 }
 .animation_check i {
   color: #99E2D0;
@@ -327,6 +343,14 @@ header i {
   padding-top: 6px;
 }
 
+@keyframes check-rotate {
+  from {
+    transform: rotate(-360deg);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
 .select-city {
   display: flex;
   justify-content: center;
@@ -402,7 +426,7 @@ header i {
 
 .step {
   display: flex;
-  box-shadow: 2px 1px 18px -7px #969494;
+  box-shadow: 2px 1px 18px 0px #969494;
   align-items: center;
   background-color: #f6f6f6;
   width: 353px;
@@ -511,7 +535,7 @@ header i {
 }
 .container-cards .card {
   border-radius: 20px;
-  box-shadow: 2px 1px 18px -7px #969494;
+  box-shadow: 2px 1px 18px 0px #969494;
   overflow: hidden;
   width: 39%;
   height: 256px;
@@ -567,28 +591,22 @@ header i {
 }
 
 .coeur_1 {
-  font-size: 30px;
   color: transparent;
   background: linear-gradient(to left, #9356DC, #FF79DA);
   background-clip: text;
   -webkit-background-clip: text;
   position: absolute;
-  right: 22px;
-  top: -2px;
   opacity: 0;
   transition: all 300ms ease;
-}
-@media screen and (max-width: 992px) {
-  .coeur_1 {
-    transition: all 0ms;
-  }
+  font-size: 30px;
+  right: 22px;
+  top: -2px;
 }
 .coeur_1:hover {
   transform: scale(1.01);
   opacity: 1;
 }
 .coeur_1:active {
-  transform: scale(1.01);
   opacity: 1;
 }
 
