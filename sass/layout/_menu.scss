@@ -53,24 +53,29 @@
          }
 
          &:hover .animation_check{
-                 margin-right: 0px;
-                 transition: 700ms;
+                  margin-right: 0px;         
          }
 
          &:active .animation_check{
                   margin-right: 0px;
-                  transition: 600ms;
+         }
+
+         &:hover .animation_check i{
+                  animation: check-rotate 0.5s linear;
          }
 }
 
 
-
 .menu__card__title{
-         width: 272px;
+         width: 312px;
+         overflow: hidden;
 
          & h3 {
                   padding-left: 11px;
                   padding-top: 13px;
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;                  
          }
 
          & p{
@@ -78,8 +83,10 @@
                   padding-left: 11px;
                   padding-top: 4px;
                   padding-bottom: 13px;
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
          }
-
 }
 
 
@@ -89,21 +96,19 @@
          padding-right: 14px;        
 }               
          
-
-         
+      
 // Pour l'animation valider un menu
 
 .animation_check{
          background-color: $color-tertiary;
-         width:72px;
-         border-radius: 0px 14px 14px 0px;
+         width:72px;        
          display: flex;
          justify-content: center;
          align-items: center;
          margin-right: -74px;
+         transition: margin-right 0.5s linear;
                  
          & i{
-         
                   color: $color-tertiary;
                   font-size: 21px;
                   background-color: white;
@@ -111,16 +116,21 @@
                   border-radius: 15px;
                   height: 30px;
                   text-align: center;
-                  padding-top: 6px;
+                  padding-top: 6px;                  
              
          }
 
 }
 
+@keyframes check-rotate{
+         from{
+                  transform: rotate(-360deg);
+         }
 
-
-
-
+         to{
+                  transform: rotate(0);
+         }
+}
 
 
 
