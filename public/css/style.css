@@ -358,7 +358,7 @@ header i:active {
 
 @keyframes check-rotate {
   from {
-    transform: rotate(-360deg);
+    transform: rotate(-280deg);
   }
   to {
     transform: rotate(0);
@@ -394,15 +394,61 @@ header i:active {
   animation-delay: 1s;
 }
 
+.container-loader {
+  background-color: #292626;
+  height: 100vh;
+  position: fixed;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: loader 1s 3s forwards;
+}
+
 .container-letter {
   font-family: Shrikhand;
   font-size: 95px;
-  height: 45vh;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
+}
+@media screen and (max-width: 768px) {
+  .container-letter {
+    font-size: 45px;
+  }
 }
 
+.container-wine {
+  padding-top: 133px;
+}
+
+.icon-wine {
+  width: 132px;
+}
+@media screen and (max-width: 768px) {
+  .icon-wine {
+    width: 91px;
+  }
+}
+
+.icon-wine path {
+  fill: transparent;
+  stroke-width: 130;
+  stroke: #99E2D0;
+  stroke-dasharray: 22000;
+  stroke-dashoffset: 0;
+  animation: animate-wine 3s linear;
+}
+
+@keyframes loader {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
 @keyframes color-animation {
   0% {
     color: #9356DC;
@@ -420,69 +466,41 @@ header i:active {
 .letter_1 {
   animation: color-animation 3s both;
   animation-delay: 0.25s;
-  animation-iteration-count: infinite;
 }
 
 .letter_2 {
   animation: color-animation 3s both;
   animation-delay: 0.5s;
-  animation-iteration-count: infinite;
 }
 
 .letter_3 {
   animation: color-animation 3s both;
   animation-delay: 0.75s;
-  animation-iteration-count: infinite;
 }
 
 .letter_4 {
   animation: color-animation 3s both;
   animation-delay: 1s;
-  animation-iteration-count: infinite;
 }
 
 .letter_5 {
   animation: color-animation 3s both;
   animation-delay: 1.25s;
-  animation-iteration-count: infinite;
 }
 
 .letter_6 {
   animation: color-animation 3s both;
   animation-delay: 1.5s;
-  animation-iteration-count: infinite;
 }
 
 .letter_7 {
   animation: color-animation 3s both;
   animation-delay: 1.75s;
-  animation-iteration-count: infinite;
 }
 
 .letter_8 {
   animation: color-animation 3s both;
   animation-delay: 2s;
-  animation-iteration-count: infinite;
-}
-
-.container-wine {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 45vh;
-}
-
-.icon-wine {
-  width: 132px;
-}
-
-.icon-wine path {
-  fill: transparent;
-  stroke-width: 100;
-  stroke: #99E2D0;
-  stroke-dasharray: 22000;
-  stroke-dashoffset: 22000;
-  animation: animate-wine 3s linear;
 }
 
 @keyframes animate-wine {
@@ -494,8 +512,10 @@ header i:active {
     stroke: #FF79DA;
   }
   80% {
-    stroke-dashoffset: 0;
     stroke: #9356DC;
+  }
+  100% {
+    stroke-dashoffset: 0;
   }
 }
 .select-city {
@@ -643,6 +663,7 @@ header i:active {
   color: transparent;
   background: linear-gradient(to left, #9356DC, #FF79DA);
   background-clip: text;
+  -webkit-background-clip: text;
 }
 .step:active::after {
   opacity: 1;

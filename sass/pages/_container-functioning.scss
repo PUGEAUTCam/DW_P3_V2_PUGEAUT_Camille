@@ -98,6 +98,7 @@
                            color: transparent;
                            background: linear-gradient(to left, $color-primary, $color-secondary);
                            background-clip: text;
+                           -webkit-background-clip : text;
                   }
                   
                   &::after{
