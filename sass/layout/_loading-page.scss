@@ -1,12 +1,62 @@
-  
+.container-loader{
+         background-color: $color-loading;
+         height: 100vh;
+         position: fixed;
+         inset: 0;
+         z-index: 2;     
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         animation: loader 1s 3s forwards; 
+}
+
 .container-letter{
          font-family: Shrikhand;
-         font-size: 95px;      
-         height: 45vh;
-         display: flex;
-         justify-content: center;
-         align-items: flex-end;
+         font-size: 95px;     
+         
+         @include mobile-only{
+                  font-size: 45px;
+         }
 }
+
+.container-wine{
+         padding-top: 133px;
+}
+
+.icon-wine{
+         width: 132px;
+
+         @include mobile-only{
+                  width: 91px;
+         }
+}
+
+.icon-wine path{
+         fill: transparent;
+         stroke-width: 130;
+         stroke: $color-tertiary;
+         stroke-dasharray: 22000;
+         stroke-dashoffset: 0;
+         animation: animate-wine 3s linear;
+}
+
+
+// Animation pour disparition de la page loading
+
+@keyframes loader{
+         0% {
+                  visibility: visible;
+                  opacity: 1;
+         }
+         
+         100%{
+                  visibility: hidden; 
+                  opacity: 0;    
+         }
+}
+
+// Animation disco OhMyFood
 
 @keyframes color-animation{
          0%{
@@ -30,29 +80,11 @@
          .letter_#{$i} {
                   animation: color-animation 3s  both;
                   animation-delay: #{$i / 4}s;   
-                  animation-iteration-count: infinite;
          }
 }
 
-.container-wine{
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         height: 45vh;
-}
 
-.icon-wine{
-         width: 132px;
-}
-
-.icon-wine path{
-         fill: transparent;
-         stroke-width: 100;
-         stroke: $color-tertiary;
-         stroke-dasharray: 22000;
-         stroke-dashoffset: 22000;
-         animation: animate-wine 3s linear;
-}
+// Animation svg
 
 @keyframes animate-wine{
          0%{
@@ -65,8 +97,12 @@
          }
 
          80%{
-                  stroke-dashoffset: 0;   
+                 
                   stroke: $color-primary; 
+         }
+
+         100%{
+                  stroke-dashoffset: 0;  
          }
 }
 
