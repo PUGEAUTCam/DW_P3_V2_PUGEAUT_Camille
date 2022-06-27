@@ -1,0 +1,106 @@
+  
+.container-letter{
+         font-family: Shrikhand;
+         font-size: 95px;      
+         height: 45vh;
+         display: flex;
+         justify-content: center;
+         align-items: flex-end;
+}
+
+@keyframes color-animation{
+         0%{
+                  color: $color-primary;
+         }
+
+         40%{
+                  color: $color-secondary;
+         }
+
+         80%{
+                  color: $color-tertiary;
+         }
+
+         100%{
+                  color: $color-primary;
+         }
+}
+
+@for $i  from 1 through 8 {
+         .letter_#{$i} {
+                  animation: color-animation 3s  both;
+                  animation-delay: #{$i / 4}s;   
+                  animation-iteration-count: infinite;
+         }
+}
+
+.container-wine{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 45vh;
+}
+
+.icon-wine{
+         width: 132px;
+}
+
+.icon-wine path{
+         fill: transparent;
+         stroke-width: 100;
+         stroke: $color-tertiary;
+         stroke-dasharray: 22000;
+         stroke-dashoffset: 22000;
+         animation: animate-wine 3s linear;
+}
+
+@keyframes animate-wine{
+         0%{
+                  stroke-dashoffset: 22000;  
+                  stroke:$color-tertiary; 
+         }
+
+         40%{
+                  stroke: $color-secondary;
+         }
+
+         80%{
+                  stroke-dashoffset: 0;   
+                  stroke: $color-primary; 
+         }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
