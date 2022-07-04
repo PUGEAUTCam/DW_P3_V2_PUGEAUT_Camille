@@ -4,6 +4,8 @@
          display: flex;
 }
 
+
+
 // Responsive
 @mixin mobile-only{
          @media screen and (max-width: map-get($breackpoints, mobile)){
@@ -24,9 +26,15 @@
 }
 
 
+
+
+
 @mixin border-shadow{
          box-shadow: 2px 1px 18px -7px  #969494;
 }
+
+
+
 
 @mixin btn{
          box-shadow: 2px 1px 18px 0px  #969494;

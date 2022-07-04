@@ -20,7 +20,7 @@
                   padding-bottom: 54px;
                   cursor: pointer;
 
-                  @include mobile-only{
+                  @include tablette-only{
                           flex-direction: column;
                           padding-left: 22px;
                   }

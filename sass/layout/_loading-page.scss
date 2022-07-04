@@ -35,8 +35,10 @@
 .icon-wine path{
          fill: transparent;
          stroke-width: 130;
-         stroke: $color-tertiary;
-         stroke-dasharray: 22000;
+         stroke: $color-tertiary;         
+         // définit le motif des traits et des espaces utilisés pour dessiner le contour de la forme.
+         stroke-dasharray: 22000;  
+         // décale la position de départ des pointillés sur les lignes SVG.
          stroke-dashoffset: 0;
          animation: animate-wine 3s linear;
 }
@@ -76,10 +78,11 @@
          }
 }
 
+
 @for $i  from 1 through 8 {
          .letter_#{$i} {
                   animation: color-animation 3s  both;
-                  animation-delay: #{$i / 4}s;   
+                  animation-delay: #{calc($i / 4)}s;   
          }
 }
 

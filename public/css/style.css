@@ -227,7 +227,7 @@ header i:active {
   padding-bottom: 54px;
   cursor: pointer;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .footer__list {
     flex-direction: column;
     padding-left: 22px;
@@ -584,7 +584,7 @@ header i:active {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-@media screen and (max-width: 768px) {
+@media all and (max-width: 1190px) {
   .container__steps {
     flex-direction: column;
     align-items: center;

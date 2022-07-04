@@ -130,6 +130,8 @@
          }
 }
 
+
+
 // Pour l'apparation des menus en temps differe
 
 @keyframes slideup {
@@ -148,7 +150,7 @@
 @for $i  from 1 through 4 {
          .animation_#{$i} {
                   animation: slideup 500ms linear both;
-                  animation-delay: #{$i / 4}s;   
+                  animation-delay: #{calc($i / 4)}s; 
          }
 }
 

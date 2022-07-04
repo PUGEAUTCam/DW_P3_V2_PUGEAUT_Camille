@@ -11,7 +11,7 @@
          flex-wrap: wrap;
          justify-content: space-around;
 
-         @include mobile-only{
+         @media all and (max-width: 1190px) {
                   flex-direction: column;
                   align-items: center;
          }
