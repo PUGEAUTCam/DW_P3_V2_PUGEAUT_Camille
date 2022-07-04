@@ -70,11 +70,7 @@
                   height: 100%;
                   transition: all 600ms ease;
 
-                  @include tablette-only{
-                           width: 100%;
-                           height: 100%;
-                           transition: all 10ms;
-                  }
+                  
          }
 
 
@@ -103,6 +99,9 @@
                   
                   &::after{
                            opacity: 1;  
+                           width: 100%;
+
+                           
                   }                 
          }         
 
